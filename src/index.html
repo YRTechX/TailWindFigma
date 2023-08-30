@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +32,10 @@
 
             <nav class="flex flex-wrap nav content-center max-lg:flex-col max-lg:absolute max-lg:content-start max-lg:text-[#ED4C5C] max-lg:p-5 max-lg:bg-white max-lg:hidden">
                 <ul class="flex max-lg:flex-col max-lg:gap-5 max-lg:mb-4">
-                    <li class="mr-10">OVERVIEW</li>
-                    <li class="mr-10">FEATURES</li>
-                    <li class="mr-10">TECHNOLOGY</li>
-                    <li class="mr-10">CONTACT</li>
+                    <li class="mr-10"><a href="#overview">OVERVIEW</a></li>
+                    <li class="mr-10"><a href="#features">FEATURES</a></li>
+                    <li class="mr-10"><a href="#technology">TECHNOLOGY</a></li>
+                    <li class="mr-10"><a href="#contact">CONTACT</a></li>
                     <li>SIGN UP</li>
                 </ul>
                 <div class="max-lg:flex content-center flex-wrap hidden">
@@ -51,26 +51,13 @@
                     <div class="w-8 h-8 bg-[url('./assets/usFlag.png')] bg-no-repeat bg-center bg-cover mr-3"></div>
                     <div class="after:bg-[url('./assets/downArrow.png')] after:content-[' '] after:bg-no-repeat after:bg-center after:bg-cover after:w-[18px] after:h-[18px] flex content-center flex-wrap mr-3 after:ml-2 after:flex after:my-auto">EN</div>
                 </div>
-                <button class="men px-7 py-2 text-sm border max-lg:mr-2 border-white rounded-lg max-lg:border-[#ED4C5C] max-lg:text-[#ED4C5C]">LOGIN</button>
-                <ion-icon onclick="onToggleMenu(this)" class="menu_btn text-3xl cursor-pointer hidden max-lg:block my-auto text-[#ED4C5C]" name="menu" ></ion-icon>
+                <button class="px-7 py-2 text-sm border max-lg:mr-2 border-white rounded-lg max-lg:border-[#ED4C5C] max-lg:text-[#ED4C5C]">LOGIN</button>
+                <ion-icon onclick="onToggleMenu(this)" class="text-3xl cursor-pointer hidden max-lg:block my-auto text-[#ED4C5C]" name="menu" ></ion-icon>
             </div>
         </div>
     </header>
-    <!-- <div class="w-full h-screen absolute left-0 top-0 right-0 bottom-0 flex text-[#FFFFFF]">
-        <div class="cont flex justify-center flex-wrap content-center">
-            <div class="max-w-[600px]">
-                <h1 class="text-7xl font-bold text-center mb-10 tracking-[.15em]">CLOUDBUDGET</h1>
-                <div>
-                    <h3 class="mb-10 text-2xl text-center leading-9">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of 
-                    Up to €4.99
-                    </h3>
-            </div>
-                <button class="bg-[#FFFFFF] text-[#ED4C5C] py-4 px-12 rounded-lg mx-auto block font-semibold">SIGN UP</button>
-            </div>
-        </div>
-    </div> -->
     <main>
-        <div class="cont">
+        <div class="cont" id="overview">
             <div class="flex flex-wrap py-24">
                 <div class="flex-1 lg:pr-32 max-lg:basis-full max-lg:max-w-2xl max-lg:mb-10">
                     <h2 class="mb-11 text-4xl font-semibold pt-12 max-lg:pt-0">Easy to Use Cloud Budget Management Software</h2>
@@ -80,7 +67,7 @@
                 <div class="flex-1 max-lg:basis-full max-lg:flex max-lg:justify-end"><img src="./assets/Video_bg.png"/></div>
             </div>
         </div>
-        <div class="bg-[#FAFAFA] pt-16 pb-[230px] ">
+        <div class="bg-[#FAFAFA] pt-16 pb-[230px]" id="features">
             <div class="cont">
                 <h2 class="font-semibold text-4xl mb-20 text-center">Features</h2>
                 <div class="flex flex-wrap justify-between max-[1138px]:justify-around max-md:flex-col max-md: content-center">
@@ -111,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="cont font-lato">
+        <div class="cont font-lato" id="technology">
             <div class="pt-16 pb-28">
                 <h2 class="font-semibold text-4xl mb-20 text-center">Technology</h2>
                 <div class="flex flex-wrap justify-between max-[805px]:justify-around">
@@ -169,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <div class="cont">
+        <div class="cont" id="contact">
             <div class="font-lato flex flex-wrap mt-28 mb-20">
                 <div class="flex-1 lg:mr-14 max-lg:basis-full">
                     <h3 class="text-4xl font-semibold mb-12">Contact</h3>
